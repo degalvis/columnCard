@@ -1,0 +1,147 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 1px;
+    color: rgb(236, 227, 227);
+    width: 80%;
+}
+
+
+h2{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700px;
+    font-size: 30px;    
+    color: rgb(236, 227, 227);
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+ 
+.complete-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+} 
+
+.info{
+    margin: 0px 45px;
+    width: 85%;
+}
+
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    width: 250px;
+    height: 480px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+
+.sedans img{
+    margin-top: 45px;
+}
+
+
+.btn-sedan{
+    background-color: white;
+    border:  1px solid white;
+    border-radius: 55px;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    margin-top: 90px;
+    color: hsl(31, 77%, 52%);
+}
+
+
+.btn-sedan:hover{
+    background-color: hsl(31, 77%, 52%);;
+    color: white;
+    transition: .4s;
+}
+
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    width: 250px;
+    height: 480px;
+}
+
+.suvs img{
+    margin-top: 45px;
+}
+
+.btn-suv{
+    background-color: white;
+    border:  1px solid white;
+    border-radius: 55px;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    margin-top: 90px;
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-suv:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    transition: .4s;
+}
+
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    width: 250px;
+    height: 480px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+
+.luxury img{
+    margin-top: 45px;
+}
+
+
+.btn-luxury{
+    background-color: white;
+    border:  1px solid white;
+    border-radius: 55px;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    margin-top: 90px;
+    color: inherit;
+}
+
+
+.btn-luxury:hover{
+    background-color:  hsl(179, 100%, 13%);
+    color: white;
+    transition: .4s;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 480px){
+    .complete-card{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .sedans{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+    }
+}
